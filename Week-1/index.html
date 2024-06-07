@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quote of the day</h1>
+      <div class="top-center">
+        <div class="search-container">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Enter author's name"
+          />
+          <button onclick="searchByAuthor()">Search</button>
+        </div>
+      </div>
+      <div class="quote-box">
+        <div class="quote-container" id="quote-container">
+          <p id="quote-text"></p>
+        </div>
+        <button class="random-quote-btn" onclick="generateRandomQuote()">
+          Random Quote
+        </button>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
